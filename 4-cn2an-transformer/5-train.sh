@@ -1,0 +1,1 @@
+fairseq-train  easy-dataset/preprocessed --user-dir  my_fq_module --task my_translation   --arch my_small_transformer  --optimizer adam  --lr 5e-4 --lr-scheduler inverse_sqrt --warmup-updates 4000   --max-tokens 12000 --max-epoch 200
