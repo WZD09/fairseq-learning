@@ -180,6 +180,7 @@ class MyTranslationTask(TranslationTask):
 
 还有实现tasks时 self.args.data 改成 self.cfg.data.
 
-这个应该跟版本有关，新版本的Fairseq的FairseqTask改用了XXXConfig初始化，所以self.args这种参数都不能用了要用self.cfg
+这个应该跟版本有关，新版本的Fairseq的FairseqTask改用了XXXConfig初始化 不再用add_args()，所以self.args这种参数都不能用了要用self.cfg
 
 官方给的教程用的是self.args因为继承的 LegacyFairseqTask 这个类没有用 FairseqTask 的初始化，自己写了args的初始化。
+
